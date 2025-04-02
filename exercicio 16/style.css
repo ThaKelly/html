@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+    absolutas
+    cm mm in px pt pc
+    relativas
+    em ex rem  vw vh %
+    o recomendado são px e *em*
+    padrão 1em ou 16px
+    */
+    font-size: 1em;
+    background-image: linear-gradient(to right,#CCE2A3,#9eaf7d);
+}
+main{
+    background-color: #DDDBF1 ;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #868592cc;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    font: italic bolder 3m 'Work Sans', sans-serif;
+    color: #3A2449;
+    text-align: center;
+    text-shadow: 1px 1px 1px #2b1f5ae7;
+}
+h2{
+    color: #3A2449;
+}
+p{
+    color: #372772;
+        text-align: justify;
+}

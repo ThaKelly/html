@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #CCE2A3;
+        }
+        header{
+            background-color: #DDDBF1;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: #937666;
+            padding: 3px;
+            box-shadow: 5px 3px 7px rgba(19, 19, 19, 0.562);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: #DDDBF1;
+            padding: 3px;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+        main{
+        background-color: #937666;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        }
+     article > aside{
+            background-color: #705a4d;
+            margin: 10px;
+        }
+        footer{
+            background-color: #3D3A4B;
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px;
+        }
+        footer >p{
+           margin: 0px; 
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 0px;
+            background-color: rgb(255, 253, 254);
+            border-radius:100px;         
+            animation: float 3s          ease-in-out infinite;
+        }
+
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-95px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        #piso{
+            height: 10px;
+            width: 70px;
+            background-color: black;
+           
+            margin-left: 14px;
+        }
+        #borda{
+            border: 20px solid black;
+            padding: 20px;
+            border-image-source: url('Sem\ título.png');
+            border-image-slice: 20;
+            border-image-repeat: repeat;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>meu site</h1>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+   </header> 
+   <main>
+
+    <section id="noticias">
+        <article>
+            <h1>noticias sobre </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eligendi nobis maxime. Dolor error aut placeat enim nesciunt distinctio atque soluta facere quia expedita dolorem, commodi mollitia blanditiis veniam iure.</p>
+            <aside>artigo escrito po laisa</aside>
+        </article>
+    </section>
+
+   </main>
+   <footer>
+    <p>fim do site</p>
+   </footer>
+   <div id="bola"></div>
+   <div id="piso"></div>
+   <h1 id="borda">teste de borda</h1>
+</body>
+</html>
